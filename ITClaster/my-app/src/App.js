@@ -10,6 +10,8 @@ function App() {
   return (
     <Router>
 
+      <Sidebar />
+
       <div className="content">
         <Routes>
           <Route path="/dashboard" element={<Diagrams />} />
