@@ -1,0 +1,318 @@
+/* Загальні стилі */
+.account-container {
+    display: flex;
+    height: 100%;
+    /* Використовує всю висоту вікна браузера */
+    gap: 30px;
+    /* Додає відступ між блоками */
+    padding-left: 95px;
+}
+
+.accounts-section {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accounts-header {
+    position: relative;
+    /* Додаємо це */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.accounts-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    /* Відступ знизу */
+    margin-top: 0px;
+    /* Відсутній відступ зверху */
+    text-align: left;
+    /* Вирівнювання по лівому краю */
+    color: #333;
+    /* Колір */
+
+}
+
+/* Switch */
+.SwitchAccount {
+    position: absolute;
+    /* Щоб зафіксувати Switch в правому верхньому куті */
+    width: 200px;
+    right: 0px;
+    height: 35px;
+    padding: 0px 4px;
+    background: #A2BCE0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Кнопка перемикача */
+.Toggle {
+    flex: 1 1 0;
+    height: 20px;
+    padding: 4px 16px;
+    background: white;
+    box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Стилі для тексту соціальних мереж */
+.Telegram,
+.Facebook {
+    color: #384459;
+    font-size: 15px;
+    font-family: 'PT Serif Caption';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Стиль для Facebook тексту */
+.Facebook {
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+
+/* Оновлений список акаунтів */
+.accounts-list {
+    margin-top: 20px;
+}
+
+.account-item {
+    position: relative;
+    width: 469px;
+    height: 75px;
+    background: #EAECF7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    /* Відступ від лівого краю для зображення */
+    margin-bottom: 20px;
+}
+
+/* Плейсхолдер для фотографії */
+.account-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 10%;
+    margin-right: 15px;
+    /* Відступ між зображенням і текстом */
+}
+
+/* Інформація про акаунт */
+.account-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Назва акаунту */
+.account-name {
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    position: absolute;
+    left: 10px;
+    /* Відступ від зображення до тексту */
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Вирівнювання по вертикалі */
+}
+
+/* Посилання на акаунт */
+.account-link {
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    /* Абсолютне позиціонування */
+    top: 10px;
+    right: 20px;
+    /* Відступ з правого боку */
+}
+
+/* Меню керування */
+.NavSettingsMonitoringSettings {
+    top: 80px;
+    left: 20px;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: 43px;
+    padding: 0 130px;
+    box-sizing: border-box;
+    background: rgba(162, 188, 224, 0.30);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Button img {
+    width: 20px;
+    height: 20px;
+}
+
+.Separator {
+    width: 1px;
+    height: 30px;
+    background-color: rgba(64, 64, 64, 0.5);
+}
+
+/* Placeholder для додаткової кнопки */
+.placeholder {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+
+/* Загальний стиль секції коментарів */
+.comments-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 35px;
+}
+
+.comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Вирівнює елементи по вертикалі */
+}
+
+/* Стиль заголовку секції коментарів */
+.comments-title {
+    margin-bottom: 30px;
+    text-align: left;
+    margin: 0;
+    /* Видаляє відступи */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Список коментарів */
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Елемент коментаря */
+.comment-item {
+    margin-bottom: 15px;
+    /* Відступ між коментарями */
+}
+
+/* Автор коментаря */
+.comment-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    /* Відступ 70 пікселів від лівого краю */
+}
+
+/* Текст коментаря */
+.comment-text {
+    font-size: 12px;
+    /* Зменшений шрифт до 12 */
+    color: #555;
+    margin-left: 10px;
+}
+
+/* Сепаратор */
+.separator {
+    width: 99.5%;
+    /* Ширина 740 пікселів */
+    height: 1px;
+    /* Висота 1 піксель */
+    background-color: #404040;
+    /* Колір */
+    opacity: 0.5;
+    /* Прозорість 50% */
+    margin: 10px auto;
+    /* Вирівнювання по центру з відступом зверху і знизу */
+}
+
+
+/* SwitchComments */
+.SwitchComments {
+    position: relative;
+    /* Щоб зафіксувати Switch в правому верхньому куті */
+    width: 300px;
+    right: 0px;
+    height: 35px;
+    padding: 0px 4px;
+    background: #A2BCE0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    display: flex;
+    /* Вирівнює перемикач по горизонталі */
+}
+
+/* Кнопка перемикача */
+.ToggleComments {
+    flex: 1 1 0;
+    height: 20px;
+    padding: 4px 16px;
+    background: white;
+    box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Стилі для тексту соціальних мереж */
+.Telegram,
+.Facebook,
+.AllComments {
+    color: #384459;
+    font-size: 15px;
+    font-family: 'PT Serif Caption';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Стиль для Facebook тексту */
+.Facebook {
+    font-family: 'Inter';
+    font-weight: 600;
+}

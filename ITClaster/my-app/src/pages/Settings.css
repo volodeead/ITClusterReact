@@ -159,4 +159,5 @@
     padding: 20px;
     box-sizing: border-box;
     overflow: auto; /* Додає прокрутку, якщо контент виходить за межі */
+    margin-right: 35px;
 }
