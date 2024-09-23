@@ -10,7 +10,7 @@ import trashIcon from '../imgs/free-icon-font-trash.png';
 const Settings = () => {
     return (
         <div>
-            <div className="container">
+            <div className="container-settings">
                 <div className="MonitoringSettings">
                     {/* Заголовок */}
                     <div className="title">
@@ -43,7 +43,7 @@ const Settings = () => {
                     </div>
 
                     {/* Контент */}
-                    <div className="content">
+                    <div className="content-settins">
                         {/* Ваш контент тут */}
                     </div>
 

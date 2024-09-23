@@ -1,0 +1,249 @@
+/* Основні налаштування сторінки */
+.news-page {
+  padding-right: 35px;
+  width: 100%;
+  height: 100vh;
+  /* Для адаптації висоти */
+  background: #EAECF7;
+  box-sizing: border-box;
+  /* Для включення padding до розміру сторінки */
+
+  padding-left: 95px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Бокова панель */
+.news-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 400px; /* Мінімальна ширина для правої колонки */
+  max-width: 500px; /* Максимальна ширина */
+  gap: 30px; /* Відступ між статистикою і коментарями */
+  box-sizing: border-box;
+}
+
+.news-sidebar-item {
+  width: 50px;
+  height: 35px;
+  background: #EAECF7;
+  opacity: 0.8;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.news-main-content {
+  padding-top: 30px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* Статистика */
+.news-statistic-section {
+  flex: 1;
+  background: #F4F6FB;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.news-statistic-title {
+  text-align: center;
+  font-size: 1.2vw;
+  /* Адаптація для різних розмірів екрану */
+  font-family: 'PT Serif Caption', serif;
+  margin-top: 10px;
+}
+
+.news-statistic-text {
+  text-align: center;
+  font-size: 1.1vw;
+  font-family: 'PT Serif Caption', serif;
+  margin: 20px;
+}
+
+/* Фільтри */
+/* Загальний контейнер для фільтрів */
+.news-filters {
+  width: 100%;
+  height: 75px;
+  background: #F4F6FB;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Активні фільтри (верхня частина) */
+.news-active-filters {
+  height: 45px;
+  /* Висота секції активних фільтрів */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.news-filter-tag {
+  background-color: #A2BCE0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-family: 'PT Serif Caption', serif;
+  font-size: 14px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.news-close-tag {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Горизонтальний сепаратор */
+.news-horizontal-separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(64, 64, 64, 0.5);
+  /* Прозорість 50% */
+}
+
+/* Дропдаун-фільтри (нижня частина) */
+.news-dropdown-filters {
+  height: 30px;
+  /* Висота секції фільтрів */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.news-filter-item {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* Вертикальні сепаратори між фільтрами */
+.news-vertical-separator {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(64, 64, 64, 0.5);
+  /* Прозорість 50% */
+}
+
+/* Кнопка для скидання фільтрів */
+.news-reset-filter {
+  width: 25px;
+  height: 25px;
+}
+
+.news-reset-filter img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Список новин */
+.news-list {
+  flex-grow: 1;
+  min-width: 700px;
+  height: 100%;
+  background: #F4F6FB;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.news-item {
+  margin-bottom: 2%;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.news-text {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #000;
+}
+
+.news-show-more {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Коментарі */
+.news-comments-section {
+  flex-grow: 2;
+  background: rgba(162, 188, 224, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.news-comment-title {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 1.4vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.news-comment {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.news-comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-bot-name {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.news-comment-highlight {
+  width: 10%;
+  height: 1.5vw;
+  background: rgba(162, 188, 224, 0.8);
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+.news-comment-text {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 1vw;
+  margin-top: 5px;
+}
+
+.news-show-more-comments {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}

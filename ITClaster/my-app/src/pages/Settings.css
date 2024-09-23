@@ -1,15 +1,19 @@
 /* Контейнер для основних компонентів */
-.container {
+.container-settings {
     display: flex;
-    height: 100%; /* Використовує всю висоту вікна браузера */
+    height: 100vh; /* Використовує всю висоту вікна браузера */
     gap: 30px; /* Додає відступ між блоками */
     padding-left: 95px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #EAECF7;
+    box-sizing: border-box;
 }
 
 /* Стилі для основного блоку з налаштуваннями */
 .MonitoringSettings {
     flex: 2;
-    height: 100vh;
+    height: 100%;
     position: relative; /* Важливо для коректного позиціонування Switch */
     background: #F4F6FB;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -141,18 +145,17 @@
 }
 
 /* Стилі для контенту в основному блоці */
-.content {
+.content-settins {
     margin-top: 35px; /* Щоб не перекривало інші елементи */
     padding-bottom: 20px;
-    height: calc(100% - 80px - 35px - 40px);
-    background: #FFF;
+    height: calc(100% - 80px - 35px - 40px - 20px);
     overflow: auto; /* Додає прокрутку, якщо контент виходить за межі */
 }
 
 /* Стилі для блоку з ключовими словами */
 .KeyWords {
     flex: 1; /* Займає 1/3 простору контейнера */
-    height: 100vh;
+    height: 100%;
     background: #F4F6FB;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;

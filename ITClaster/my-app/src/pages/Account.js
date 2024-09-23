@@ -8,7 +8,7 @@ import './Account.css';
 const Account = () => {
     return (
         <div className="account-container">
-            <Sidebar />
+
             <section className="accounts-section">
                 <div className="accounts-header">
                     <h2>Акаунти</h2>

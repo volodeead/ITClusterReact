@@ -13,13 +13,16 @@ function App() {
       <Sidebar />
 
       <div className="content">
+        
         <Routes>
           <Route path="/dashboard" element={<Diagrams />} />
           <Route path="/news" element={<News />} />
           <Route path="/account" element={<Account />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
+
       </div>
+
     </Router>
   );
 }
