@@ -110,7 +110,7 @@
     text-align: center;
     width: 100%;
     height: 43px;
-    padding: 0 130px;
+    padding: 0 60px;
     box-sizing: border-box;
     background: rgba(162, 188, 224, 0.30);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -163,4 +163,65 @@
     box-sizing: border-box;
     overflow: auto; /* Додає прокрутку, якщо контент виходить за межі */
     margin-right: 35px;
+}
+
+/* Оформлення кожного ресурсу з чекбоксом */
+.resource-settins-ul {
+    padding-left: 0px;
+}
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F4F6FB;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'PT Serif Caption', serif;
+    font-size: 16px;
+    color: #000;
+    opacity: 0.8;
+}
+
+.resource-checkbox {
+    margin-right: 10px;
+}
+
+.resource-link {
+    color: #384459;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Форма для додавання ресурсів */
+.add-resource-form {
+    background-color: #A2BCE0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-resource-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-resource-form button {
+    padding: 10px 20px;
+    background-color: #4D4D4D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-resource-form button:hover {
+    background-color: #333;
 }
