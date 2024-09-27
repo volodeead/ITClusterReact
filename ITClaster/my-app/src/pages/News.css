@@ -3,17 +3,16 @@
   padding-right: 35px;
   width: 100%;
   height: 100vh;
-  /* Для адаптації висоти */
+  /* Висота вікна браузера */
   background: #EAECF7;
   box-sizing: border-box;
-  /* Для включення padding до розміру сторінки */
-
   padding-left: 95px;
   padding-top: 25px;
-  padding-bottom: 25px;
-
+  padding-bottom: 35px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  /* Прибирає прокрутку на сторінці */
 }
 
 /* Бокова панель */
@@ -21,10 +20,12 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 400px; /* Мінімальна ширина для правої колонки */
-  max-width: 500px; /* Максимальна ширина */
-  gap: 30px; /* Відступ між статистикою і коментарями */
+  min-width: 400px;
+  max-width: 500px;
+  gap: 30px;
   box-sizing: border-box;
+  overflow: auto;
+  /* Додає прокрутку, якщо потрібно */
 }
 
 .news-sidebar-item {
@@ -36,39 +37,50 @@
   border-radius: 10px;
 }
 
+/* Основна секція контенту */
 .news-main-content {
   padding-top: 30px;
   display: flex;
-  height: 100%;
-  width: 100%;
+  flex-grow: 1;
   gap: 30px;
   box-sizing: border-box;
+  height: 100%;
+  overflow: hidden; /* Прибирає прокрутку на головному контейнері */
 }
 
-/* Статистика */
-.news-statistic-section {
-  flex: 1;
-  background: #F4F6FB;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+/* Секція статистики */
+.news-stat-section {
+  background-color: #f9fafc;
+  border-radius: 10px;
   padding: 20px;
-  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.news-statistic-title {
-  text-align: center;
-  font-size: 1.2vw;
-  /* Адаптація для різних розмірів екрану */
-  font-family: 'PT Serif Caption', serif;
-  margin-top: 10px;
+.news-stat-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.news-statistic-text {
-  text-align: center;
-  font-size: 1.1vw;
-  font-family: 'PT Serif Caption', serif;
-  margin: 20px;
+.news-stat-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
+
+.negative-stat {
+  color: red;
+}
+
+.positive-stat {
+  color: green;
+}
+
+.neutral-stat {
+  color: blue;
+}
+
 
 /* Фільтри */
 /* Загальний контейнер для фільтрів */
@@ -143,15 +155,14 @@
   /* Прозорість 50% */
 }
 
-/* Кнопка для скидання фільтрів */
+/* Updated for the reset button */
 .news-reset-filter {
-  width: 25px;
-  height: 25px;
+  cursor: pointer;
 }
 
 .news-reset-filter img {
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 25px;
 }
 
 
@@ -159,13 +170,13 @@
 .news-list {
   flex-grow: 1;
   min-width: 700px;
-  height: 100%;
   background: #F4F6FB;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
-
+  height: 100%;
+  overflow-y: auto;  /* Додає вертикальну прокрутку, якщо контент перевищує висоту */
 }
 
 .news-item {
